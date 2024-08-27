@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.light-theme {
+    background-color: lightgreen;
+
+    .fab {
+        color: purple;
+    }
+}
+
+.dark-theme {
+    background-color: black;
+
+    .fab {
+        color: lightgreen;
+    }
+}
+
+.end-align {
+    align-items: flex-end;
+}
+
+.start-align {
+    align-items: flex-start;
+}
+
+.top-pad {
+    padding-top: 20px;
+}
+
+/* Light Theme */
+.light-theme {
+    --background-color: #f0f8f0;
+    --primary-color: #fafad2;
+    --text-color: #333;
+}
+
+/* Dark Theme */
+.dark-theme {
+    --background-color: #2e003e;
+    --primary-color: #000;
+    --text-color: #f0f0f0;
+}
+
+/* Transition for theme change */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Animations */
+
+.icon {
+    font-size: 60px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.icon-link:hover .icon {
+    transform: scale(1.5);
+    color: #0077b5;
+}
+
+/* Click or selected effect */
+.icon-link:focus .icon {
+    color: #000;
+}
